@@ -1044,4 +1044,4 @@ button:focus, input:focus, textarea:focus, select:focus, a:focus { box-shadow: 0
 }
 .fsw--calico { background: linear-gradient(135deg, #f8f2e8 50%, #d4721e 50%); }
 .fsw--void   { background: linear-gradient(135deg, #0a0a0f 50%, #4db8ff 50%); }
-.fsw--neon   { background: linear-gradient(135deg, #0d0d1a 50%, #00ffff 50%); }
+.fsw--neon   { background: linear-gradient(135deg, #0d0221 50%, #ff2d78 50%); }
