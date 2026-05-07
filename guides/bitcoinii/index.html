@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Mine BitcoinII | Meowpool</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#fff;}
+header{background:#000;padding:20px 10%;border-bottom:1px solid #222;display:flex;justify-content:space-between;align-items:center;}
+header h1{margin:0;font-size:24px;}
+nav a{color:#ccc;text-decoration:none;margin-left:20px;font-weight:bold;}
+nav a:hover{color:white;}
+.container{padding:50px 10%;}
+h2{font-size:32px;margin-bottom:15px;}
+h3{font-size:22px;margin-top:30px;margin-bottom:10px;}
+p{color:#aaa;line-height:1.6;font-size:16px;}
+a.button{display:inline-block;margin-top:20px;padding:12px 25px;background:white;color:black;font-weight:bold;border-radius:5px;text-decoration:none;transition:0.2s;}
+a.button:hover{background:#ddd;}
+pre{background:#111;padding:12px;border-radius:5px;color:#fff;overflow-x:auto;}
+ul{color:#aaa;line-height:1.6;margin-left:20px;}
+.tip{background:#111;padding:10px;border-left:4px solid #fff;margin:15px 0;}
+</style>
+</head>
+<body>
+<header>
+<h1>BitcoinII Mining Guide</h1>
+<nav>
+<a href="/guides">All Guides</a>
+<a href="https://meowpool.net">Meowpool</a>
+</nav>
+</header>
+
+<div class="container">
+<h2>Getting Started with BitcoinII Mining</h2>
+<p>Welcome! This guide will take you step-by-step through mining BitcoinII using either your GPU or CPU, configuring your miner, connecting to the Meowpool mining pool, and optimizing performance.</p>
+
+<h3>Step 1: Set Up Your Wallet</h3>
+<p>Before mining, you need a BitcoinII wallet to receive your mining rewards:</p>
+<ul>
+<li>Download the official BitcoinII wallet from <a href="https://bitcoin-ii.org/" target="_blank">bitcoinii.org</a>.</li>
+<li>Install it on your computer and create a new wallet address.</li>
+<li>Securely back up your wallet and recovery phrase.</li>
+<li>Verify your wallet is synced with the network.</li>
+</ul>
+<div class="tip">Tip: Use a dedicated wallet for mining to avoid mixing funds with personal transactions.</div>
+
+<h3>Step 2: Choose Your Miner</h3>
+<p>You will need mining software that supports BitcoinII’s algorithm. Recommended miners:</p>
+<ul>
+<li><strong>BFGMiner</strong> – Great for advanced users with ASIC or GPU setups.</li>
+<li><strong>CGMiner</strong> – Stable and widely used, supports multiple devices.</li>
+<li>Ensure you download the correct version for your operating system.</li>
+</ul>
+<div class="tip">Tip: Always verify miner binaries using checksums or signatures to prevent malware.</div>
+
+<h3>Step 3: Configure Your Miner</h3>
+<p>Set up your miner to connect to Meowpool:</p>
+<pre>stratum+tcp://meowpool.net:3068</pre>
+<p>Use your wallet address as the worker name and optionally add a password (can be anything for Meowpool).</p>
+<p>Example command for BFGMiner:</p>
+<pre>bfgminer -o stratum+tcp://meowpool.net:3068 -u YOUR_WALLET_ADDRESS -p x</pre>
+
+<h3>Step 4: Start Mining</h3>
+<p>Run your miner and monitor your hashrate. You can track your stats on the <a href="https://meowpool.net/#bc2/dashboard" target="_blank">Meowpool dashboard</a>.</p>
+<ul>
+<li>Check for rejected shares — a few are normal, many indicate connection or config issues.</li>
+<li>Adjust your miner settings for optimal performance without overheating your hardware.</li>
+<li>For GPUs, consider fan speed and power limits to maintain efficiency.</li>
+</ul>
+
+<h3>Step 5: Troubleshooting</h3>
+<ul>
+<li><strong>Miner not connecting:</strong> Ensure firewall allows outbound TCP to port 3068.</li>
+<li><strong>Low hashrate:</strong> Check GPU drivers and mining software versions.</li>
+<li><strong>High rejected shares:</strong> Try lowering intensity or switching stratum server.</li>
+<li><strong>Pool dashboard not updating:</strong> Mining shares may take a few minutes to appear; check your wallet address.</li>
+</ul>
+
+<h3>Step 6: Next Steps & Tips</h3>
+<ul>
+<li>Experiment with different miner settings to find the best balance of performance and stability.</li>
+<li>Consider joining the Meowpool community for tips and announcements.</li>
+<li>Regularly update your wallet and miner software to stay secure.</li>
+<li>Check profitability periodically as network difficulty and coin price change.</li>
+</ul>
+
+<a class="button" href="/guides">← Back to All Guides</a>
+<a class="button" href="https://meowpool.net">Go to Meowpool</a>
+
+</div>
+</body>
+</html>

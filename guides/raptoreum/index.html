@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Mine Raptoreum | Meowpool</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#fff;}
+header{background:#000;padding:20px 10%;border-bottom:1px solid #222;display:flex;justify-content:space-between;align-items:center;}
+header h1{margin:0;font-size:24px;}
+nav a{color:#ccc;text-decoration:none;margin-left:20px;font-weight:bold;}
+nav a:hover{color:white;}
+.container{padding:50px 10%;}
+h2{font-size:32px;margin-bottom:15px;}
+h3{font-size:22px;margin-top:30px;margin-bottom:10px;}
+p{color:#aaa;line-height:1.6;font-size:16px;}
+a.button{display:inline-block;margin-top:20px;padding:12px 25px;background:white;color:black;font-weight:bold;border-radius:5px;text-decoration:none;transition:0.2s;}
+a.button:hover{background:#ddd;}
+pre{background:#111;padding:12px;border-radius:5px;color:#fff;overflow-x:auto;}
+ul{color:#aaa;line-height:1.6;margin-left:20px;}
+.tip{background:#111;padding:10px;border-left:4px solid #fff;margin:15px 0;}
+</style>
+</head>
+<body>
+<header>
+<h1>Raptoreum Mining Guide</h1>
+<nav>
+<a href="/guides">All Guides</a>
+<a href="https://meowpool.net">Meowpool</a>
+</nav>
+</header>
+
+<div class="container">
+<h2>Getting Started with Raptoreum Mining</h2>
+<p>This guide will take you step-by-step through mining Raptoreum using CPU or GPU miners, connecting to Meowpool, and optimizing your setup.</p>
+
+<h3>Step 1: Set Up Your Wallet</h3>
+<ul>
+<li>Download the official Raptoreum wallet from <a href="https://raptoreum.com" target="_blank">raptoreum.com</a>.</li>
+<li>Install it on your computer and create a new wallet address dedicated for mining rewards.</li>
+<li>Backup your wallet and recovery phrase securely.</li>
+<li>Ensure the wallet is fully synced with the network.</li>
+</ul>
+<div class="tip">Tip: Use a separate wallet for mining to keep earnings organized and secure.</div>
+
+<h3>Step 2: Choose Your Miner</h3>
+<p>Recommended miners for Raptoreum:</p>
+<ul>
+<li><strong>XMRig</strong> – Supports CPU mining efficiently and is widely used in the community.</li>
+<li>Ensure you download the correct version for your operating system.</li>
+<li>Verify the binary checksum/signature to avoid malware.</li>
+</ul>
+<div class="tip">Tip: CPU mining is the most effective for Raptoreum; GPU mining is possible but less common.</div>
+
+<h3>Step 3: Connect to Meowpool</h3>
+<p>Configure your miner with the following pool details:</p>
+<pre>stratum+tcp://meowpool.net:3032</pre>
+<p>Use your wallet address as the worker name. Password can be set to "x".</p>
+<p>Example XMRig command:</p>
+<pre>xmrig -o stratum+tcp://meowpool.net:3032 -u YOUR_WALLET_ADDRESS -p x</pre>
+
+<h3>Step 4: Start Mining</h3>
+<p>Run your miner and monitor your hashrate and shares. Track your mining rewards on the <a href="https://meowpool.net/#rtm/dashboard" target="_blank">Meowpool dashboard</a>.</p>
+<ul>
+<li>Check rejected shares — a few are normal; high numbers indicate connection or config issues.</li>
+<li>Adjust miner settings to optimize performance while keeping hardware safe.</li>
+<li>Monitor CPU/GPU temperatures and utilization to prevent overheating.</li>
+</ul>
+
+<h3>Step 5: Troubleshooting</h3>
+<ul>
+<li><strong>Miner not connecting:</strong> Check firewall and outbound TCP port 3032.</li>
+<li><strong>Low hashrate:</strong> Verify miner version and system performance.</li>
+<li><strong>High rejected shares:</strong> Reduce intensity or try alternative stratum server if available.</li>
+<li><strong>Dashboard not updating:</strong> Mining shares may take a few minutes to appear; ensure wallet address is correct.</li>
+</ul>
+
+<h3>Step 6: Next Steps & Tips</h3>
+<ul>
+<li>Experiment with different miner settings for optimal performance and stability.</li>
+<li>Keep your wallet and miner software updated for security.</li>
+<li>Regularly check Raptoreum network difficulty and coin profitability.</li>
+<li>Join the Meowpool community for updates, tips, and announcements.</li>
+</ul>
+
+<a class="button" href="/guides">← Back to All Guides</a>
+<a class="button" href="https://meowpool.net">Go to Meowpool</a>
+
+</div>
+</body>
+</html>

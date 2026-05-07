@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Mine Meowcoin | Meowpool</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#fff;}
+header{background:#000;padding:20px 10%;border-bottom:1px solid #222;display:flex;justify-content:space-between;align-items:center;}
+header h1{margin:0;font-size:24px;}
+nav a{color:#ccc;text-decoration:none;margin-left:20px;font-weight:bold;}
+nav a:hover{color:white;}
+.container{padding:50px 10%;}
+h2{font-size:32px;margin-bottom:15px;}
+h3{font-size:22px;margin-top:30px;margin-bottom:10px;}
+p{color:#aaa;line-height:1.6;font-size:16px;}
+a.button{display:inline-block;margin-top:20px;padding:12px 25px;background:white;color:black;font-weight:bold;border-radius:5px;text-decoration:none;transition:0.2s;}
+a.button:hover{background:#ddd;}
+pre{background:#111;padding:12px;border-radius:5px;color:#fff;overflow-x:auto;}
+ul{color:#aaa;line-height:1.6;margin-left:20px;}
+.tip{background:#111;padding:10px;border-left:4px solid #fff;margin:15px 0;}
+</style>
+</head>
+<body>
+<header>
+<h1>Meowcoin Mining Guide</h1>
+<nav>
+<a href="/guides">All Guides</a>
+<a href="https://meowpool.net">Meowpool</a>
+</nav>
+</header>
+
+<div class="container">
+<h2>Getting Started with Meowcoin Mining</h2>
+<p>Follow this detailed guide to mine Meowcoin using the official pool and supported miners. We’ll cover wallet setup, miner selection, pool connection, and optimization tips.</p>
+
+<h3>Step 1: Set Up Your Wallet</h3>
+<ul>
+<li>Download the official Meowcoin wallet from <a href="https://www.mewccrypto.com/" target="_blank">meowcoin</a>.</li>
+<li>Install it on your computer and create a new wallet address dedicated to mining.</li>
+<li>Securely back up your wallet and recovery phrase.</li>
+<li>Ensure your wallet is fully synced with the network before mining.</li>
+</ul>
+<div class="tip">Tip: Keep your mining wallet separate from personal transactions to simplify tracking rewards.</div>
+
+<h3>Step 2: Choose Your Miner</h3>
+<p>Recommended miners for Meowcoin:</p>
+<ul>
+<li><strong>MeowPowMiner</strong> – Optimized for Meowcoin’s algorithm, supports GPU mining.</li>
+<li><strong>SRBMiner-Multi</strong> – Flexible miner supporting multiple coins and devices.</li>
+<li>Download the latest version compatible with your OS and verify checksums to avoid malware.</li>
+</ul>
+<div class="tip">Tip: Running multiple GPUs? SRBMiner-Multi is ideal for managing all devices from one instance.</div>
+
+<h3>Step 3: Connect to Meowpool</h3>
+<p>Use the following pool address and configure your miner:</p>
+<pre>stratum+tcp://meowpool.net:3094</pre>
+<p>Use your wallet address as the worker name. Password can be left as “x”.</p>
+<p>Example command for MeowPowMiner:</p>
+<pre>MeowPowMiner.exe -o stratum+tcp://meowpool.net:3094 -u YOUR_WALLET_ADDRESS -p x</pre>
+
+<h3>Step 4: Start Mining</h3>
+<p>Run your miner and monitor your hashrate and shares. Track your earnings on the <a href="https://meowpool.net/#mewc1/dashboard" target="_blank">Meowpool dashboard</a>.</p>
+<ul>
+<li>Check for rejected shares — a few are normal; high numbers indicate configuration issues.</li>
+<li>Adjust miner settings to maintain hardware stability and optimal performance.</li>
+<li>Monitor GPU/CPU temperatures to prevent overheating.</li>
+</ul>
+
+<h3>Step 5: Troubleshooting</h3>
+<ul>
+<li><strong>Miner not connecting:</strong> Ensure TCP outbound to port 3094 is allowed by your firewall.</li>
+<li><strong>Low hashrate:</strong> Verify miner version, drivers, and GPU/CPU utilization.</li>
+<li><strong>High rejected shares:</strong> Try lowering intensity or switching stratum server.</li>
+<li><strong>Dashboard not updating:</strong> Mining shares can take a few minutes to appear; double-check your wallet address.</li>
+</ul>
+
+<h3>Step 6: Next Steps & Tips</h3>
+<ul>
+<li>Experiment with different miner settings for performance vs stability.</li>
+<li>Keep your wallet and miner software updated for security.</li>
+<li>Regularly check profitability as network difficulty and coin price change.</li>
+<li>Join the Meowpool community for news, updates, and support.</li>
+</ul>
+
+<a class="button" href="/guides">← Back to All Guides</a>
+<a class="button" href="https://meowpool.net">Go to Meowpool</a>
+
+</div>
+</body>
+</html>

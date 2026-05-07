@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Mine Ravencoin | Meowpool</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#fff;}
+header{background:#000;padding:20px 10%;border-bottom:1px solid #222;display:flex;justify-content:space-between;align-items:center;}
+header h1{margin:0;font-size:24px;}
+nav a{color:#ccc;text-decoration:none;margin-left:20px;font-weight:bold;}
+nav a:hover{color:white;}
+.container{padding:50px 10%;}
+h2{font-size:32px;margin-bottom:15px;}
+h3{font-size:22px;margin-top:30px;margin-bottom:10px;}
+p{color:#aaa;line-height:1.6;font-size:16px;}
+a.button{display:inline-block;margin-top:20px;padding:12px 25px;background:white;color:black;font-weight:bold;border-radius:5px;text-decoration:none;transition:0.2s;}
+a.button:hover{background:#ddd;}
+pre{background:#111;padding:12px;border-radius:5px;color:#fff;overflow-x:auto;}
+ul{color:#aaa;line-height:1.6;margin-left:20px;}
+.tip{background:#111;padding:10px;border-left:4px solid #fff;margin:15px 0;}
+</style>
+</head>
+<body>
+<header>
+<h1>Ravencoin Mining Guide</h1>
+<nav>
+<a href="/guides">All Guides</a>
+<a href="https://meowpool.net">Meowpool</a>
+</nav>
+</header>
+
+<div class="container">
+<h2>Getting Started with Ravencoin Mining</h2>
+<p>This guide will walk you through mining Ravencoin using GPU miners, connecting to Meowpool, and optimizing your setup for best performance.</p>
+
+<h3>Step 1: Set Up Your Wallet</h3>
+<ul>
+<li>Download the official Ravencoin wallet from <a href="https://ravencoin.org" target="_blank">ravencoin.org</a>.</li>
+<li>Install it and create a new wallet address dedicated for mining rewards.</li>
+<li>Backup your wallet and recovery phrase securely.</li>
+<li>Ensure your wallet is fully synced with the network before mining.</li>
+</ul>
+<div class="tip">Tip: Use a dedicated wallet for mining to avoid mixing funds with personal transactions.</div>
+
+<h3>Step 2: Choose Your Miner</h3>
+<p>Recommended GPU miners for Ravencoin:</p>
+<ul>
+<li><strong>T-Rex Miner</strong> – Efficient for NVIDIA GPUs and widely used.</li>
+<li><strong>SRBMiner-Multi</strong> – Supports AMD and NVIDIA GPUs, stable for long runs.</li>
+<li>Download the miner for your operating system and verify its checksum.</li>
+</ul>
+<div class="tip">Tip: Keep your GPU drivers up to date for optimal performance.</div>
+
+<h3>Step 3: Connect to Meowpool</h3>
+<p>Configure your miner with the following pool details:</p>
+<pre>stratum+tcp://meowpool.net:3094</pre>
+<p>Use your wallet address as the worker name. Password can be "x".</p>
+<p>Example T-Rex command:</p>
+<pre>t-rex -a kawpow -o stratum+tcp://meowpool.net:3094 -u YOUR_WALLET_ADDRESS -p x</pre>
+
+<h3>Step 4: Start Mining</h3>
+<p>Run your miner and monitor your hashrate. Track your mining rewards on the <a href="https://meowpool.net/#rvn1/dashboard" target="_blank">Meowpool dashboard</a>.</p>
+<ul>
+<li>Check for rejected shares — a few are normal; high numbers indicate config issues.</li>
+<li>Adjust GPU settings such as power limit and fan speed to maintain efficiency and prevent overheating.</li>
+<li>Monitor performance regularly to avoid hardware damage.</li>
+</ul>
+
+<h3>Step 5: Troubleshooting</h3>
+<ul>
+<li><strong>Miner not connecting:</strong> Ensure your firewall allows outbound TCP to port 3094.</li>
+<li><strong>Low hashrate:</strong> Verify miner version and GPU settings.</li>
+<li><strong>High rejected shares:</strong> Try lowering intensity or switching to an alternate stratum server if available.</li>
+<li><strong>Dashboard not updating:</strong> Mining shares may take a few minutes to appear; double-check your wallet address.</li>
+</ul>
+
+<h3>Step 6: Next Steps & Tips</h3>
+<ul>
+<li>Experiment with different miner settings to find the best balance between performance and stability.</li>
+<li>Regularly update your miner software and wallet for security.</li>
+<li>Check Ravencoin network difficulty and coin profitability periodically.</li>
+<li>Join the Meowpool community for updates, tips, and announcements.</li>
+</ul>
+
+<a class="button" href="/guides">← Back to All Guides</a>
+<a class="button" href="https://meowpool.net">Go to Meowpool</a>
+
+</div>
+</body>
+</html>
