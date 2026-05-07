@@ -64,7 +64,8 @@ Ensure your Miningcore instance is properly configured and accessible before use
 
 Clone the repository:
 
-git clone https://github.com/souly129/miningcore.ui
+git clone https://github.com/souly129/miningcore.ui 
+
 cd miningcore.ui
 
 ---
